@@ -5,7 +5,15 @@ if(typeof CharaterState == "undefined") {
 	CharaterState.BREAKING = 2;
 };
 
-var Charater = cc.Class.extend({
+if(typeof CharaterType == "undefined") {
+	var CharaterType = {};
+	CharaterType.WALL = 0;
+	CharaterType.FIGHTER = 1;
+	CharaterType.BOWER = 2;
+};
+
+var Character = cc.Class.extend({
+	characterType:null, //
 	sprite:null, //角色图片
 	
 	//血量
@@ -14,10 +22,16 @@ var Charater = cc.Class.extend({
 	//攻击范围
 	//对手
 	
-	ctor:function (spriteSheet, space, pos) {
-		this.space = space;
-
+	ctor:function (characterType) {
+		this.characterType = characterType;
+		if(characterType==CharaterType.WALL){
 		
+		}else if(characterType==CharaterType.FIGHTER){
+			
+		}else if(characterType==CharaterType.BOWER){
+			
+		}
+		this.sprite = cc.Sprite.create(res.temp_png);
 	},
 
 	

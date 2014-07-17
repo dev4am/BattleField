@@ -12,8 +12,9 @@
 
     "jsList" : [
         "src/resource.js",
-        "src/app.js"£¬
-        "src/Charater.js",
-        "src/BattleFieldLayer.js"
+        "src/app.js",
+        "src/Character.js",
+        "src/BattleFieldLayer.js",
+        "src/GameScene.js"
     ]
 }
